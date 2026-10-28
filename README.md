@@ -6,7 +6,7 @@ Página de una sola sección (HTML + CSS, sin dependencias) con botones a WhatsA
 Abre `index.html` con doble clic en el navegador.
 
 ## Pendientes
-- [ ] Número de WhatsApp Business: en `index.html` busca `52XXXXXXXXXX` y cámbialo (52 + 10 dígitos, sin espacios).
+- [x] Número de WhatsApp Business: 56 6643 4543 (`https://wa.me/525666434543`).
 - [ ] Fotos: ponerlas en `img/` y descomentar la etiqueta `<img>` del encabezado.
 
 ## Colores (del logo)
