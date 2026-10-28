@@ -1,13 +1,28 @@
 # Sitio web · Dr. Marvin Facio / Servicios Médicos SaF
 
-Página de una sola sección (HTML + CSS, sin dependencias) con botones a WhatsApp Business, Instagram y Google Maps.
+Página del consultorio hecha con **React + Vite**, **Tailwind CSS v4** y animaciones con **GSAP**.
 
-## Ver la página
-Abre `index.html` con doble clic en el navegador.
+**En línea:** https://marvinfacio.github.io/servicios-medicos-saf-web/
+
+## Trabajar en la página
+```bash
+npm install      # solo la primera vez
+npm run dev      # vista previa con recarga automática
+npm run build    # genera la versión final en dist/
+```
+
+## Dónde cambiar cosas
+- Textos, servicios, horario, enlaces (WhatsApp, Instagram, Maps): `src/data.js`
+- Secciones: `src/components/`
+- Colores y fuente: bloque `@theme` en `src/index.css`
+- Animaciones: `src/App.jsx`
+- Imágenes: carpeta `public/`
+
+## Publicación
+Cada `git push` a `main` publica la página automáticamente con GitHub Actions (`.github/workflows/deploy.yml`).
 
 ## Pendientes
-- [x] Número de WhatsApp Business: 56 6643 4543 (`https://wa.me/525666434543`).
-- [ ] Fotos: ponerlas en `img/` y descomentar la etiqueta `<img>` del encabezado.
+- [ ] Fotos del consultorio y del doctor (`public/`).
 
 ## Colores (del logo)
 | Color | Hex |
