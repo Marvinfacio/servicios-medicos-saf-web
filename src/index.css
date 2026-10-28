@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Paleta tomada del logo de Servicios Médicos SaF */
+@theme {
+  --color-navy: #122D3E;
+  --color-teal: #14A398;
+  --color-teal-dark: #0B7A72; /* para fondos con texto blanco (contraste AA) */
+  --color-teal-darker: #096A63;
+  --color-cyan: #2DC4E4;
+  --color-magenta: #D4237A;
+  --color-muted: #4E6474;
+  --color-line: #E2E9EC;
+  --color-surface-alt: #F4F8F9;
+
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-navy antialiased;
+    line-height: 1.6;
+  }
+
+  a,
+  button {
+    touch-action: manipulation;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
