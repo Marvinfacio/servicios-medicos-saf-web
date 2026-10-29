@@ -41,8 +41,8 @@ export const services = [
     id: 'metabolico',
     title: { es: 'Control metabólico y de peso', en: 'Metabolic & weight control' },
     text: {
-      es: 'Planes personalizados con opciones de medicamentos inyectables de última generación.',
-      en: 'Personalized plans, including the latest injectable medications.',
+      es: 'Plan personalizado con mediciones en consultorio, alimentación, actividad física y tratamiento médico cuando está indicado.',
+      en: 'Personalized plan with in-office measurements, nutrition, physical activity and medical treatment when indicated.',
     },
     tags: {
       es: ['Sobrepeso y obesidad', 'Resistencia a la insulina', 'Diabetes', 'Colesterol y triglicéridos', 'Hígado graso', 'SOP'],
@@ -115,17 +115,17 @@ export const profile = {
   paragraphs: {
     es: [
       'Soy médico general originario de la ciudad de Chihuahua, con 6 años de experiencia. Actualmente colaboro con la Dra. Perla Hernández, endocrinóloga, en el Hospital Sierra Alta, y atiendo en mi consultorio particular en Nexcare Consultorios.',
-      'Ofrezco consulta general y metabólica para ayudarte a recuperar tu salud metabólica, con estrategias personalizadas y el apoyo de los nuevos medicamentos inyectables, que han resultado muy innovadores. También realizo procedimientos en consultorio como electrocardiograma, retiro de verrugas y retiro de implante anticonceptivo, entre otros.',
+      'Ofrezco consulta general y metabólica para ayudarte a mejorar tu salud metabólica, con estrategias personalizadas, seguimiento cercano y tratamiento médico cuando está indicado. También realizo procedimientos en consultorio como electrocardiograma, retiro de verrugas y retiro de implante anticonceptivo, entre otros.',
     ],
     en: [
       'I am a general practitioner from Chihuahua with 6 years of experience. I currently work alongside Dr. Perla Hernández, endocrinologist, at Hospital Sierra Alta, and see patients at my private practice in Nexcare Consultorios.',
-      'I offer general and metabolic consultations to help you regain your metabolic health, using personalized strategies supported by the new injectable medications, which have proven truly innovative. I also perform in-office procedures such as electrocardiograms, wart removal and contraceptive implant removal, among others.',
+      'I offer general and metabolic consultations to help you improve your metabolic health, with personalized strategies, close follow-up and medical treatment when indicated. I also perform in-office procedures such as electrocardiograms, wart removal and contraceptive implant removal, among others.',
     ],
   },
   highlights: [
     { value: '6', label: { es: 'años de experiencia', en: 'years of experience' } },
     { value: '+', label: { es: 'Colaboración con endocrinología · Hospital Sierra Alta', en: 'Works with endocrinology · Hospital Sierra Alta' } },
-    { value: '✓', label: { es: 'Tratamientos inyectables de nueva generación', en: 'New-generation injectable treatments' } },
+    { value: '✓', label: { es: 'Seguimiento personalizado', en: 'Personalized follow-up' } },
   ],
 }
 
@@ -150,8 +150,8 @@ export const ui = {
   hero: {
     eyebrow: { es: 'Medicina general y metabólica · Chihuahua', en: 'General & metabolic medicine · Chihuahua' },
     pitch: {
-      es: 'Recupera tu salud metabólica con un plan personalizado y atención cercana.',
-      en: 'Regain your metabolic health with a personalized plan and caring attention.',
+      es: 'Cuida tu salud metabólica con un plan personalizado y atención cercana.',
+      en: 'Take care of your metabolic health with a personalized plan and caring attention.',
     },
     whatsapp: { es: 'Agenda por WhatsApp', en: 'Book on WhatsApp' },
     call: { es: 'Llamar a recepción', en: 'Call reception' },
