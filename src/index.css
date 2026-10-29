@@ -17,6 +17,13 @@
   --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+/* Fondo suave del hero con los colores de la marca */
+@utility hero-wash {
+  background:
+    radial-gradient(ellipse at top right, color-mix(in oklab, var(--color-cyan) 14%, transparent), transparent 60%),
+    radial-gradient(ellipse at bottom left, color-mix(in oklab, var(--color-teal) 10%, transparent), transparent 55%);
+}
+
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;

@@ -4,6 +4,12 @@ import LangToggle from './LangToggle.jsx'
 export default function Header() {
   return (
     <header className="border-b border-line pt-[env(safe-area-inset-top)]">
+      <div aria-hidden="true" className="grid h-1 grid-cols-4">
+        <span className="bg-teal" />
+        <span className="bg-cyan" />
+        <span className="bg-magenta" />
+        <span className="bg-navy" />
+      </div>
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-5 py-3.5">
         <a
           href="#inicio"
