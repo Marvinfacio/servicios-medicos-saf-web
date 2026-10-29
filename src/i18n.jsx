@@ -4,6 +4,13 @@ const STORAGE_KEY = 'lang'
 const LangContext = createContext(null)
 
 function initialLang() {
+  // ?lang=en o ?lang=es en la URL tiene prioridad (lo usan los anuncios de Google)
+  try {
+    const fromUrl = new URLSearchParams(window.location.search).get('lang')
+    if (fromUrl === 'es' || fromUrl === 'en') return fromUrl
+  } catch {
+    // URL sin parámetros válidos
+  }
   try {
     const saved = localStorage.getItem(STORAGE_KEY)
     if (saved === 'es' || saved === 'en') return saved
