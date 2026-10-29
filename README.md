@@ -1,8 +1,9 @@
 # Sitio web · Dr. Marvin Facio / Servicios Médicos SaF
 
-Página del consultorio hecha con **React + Vite**, **Tailwind CSS v4** y animaciones con **GSAP**.
+Sitio del consultorio hecho con **React + Vite**, **Tailwind CSS v4** y animaciones con **GSAP**. Disponible en español e inglés.
 
 **En línea:** https://marvinfacio.github.io/servicios-medicos-saf-web/
+**Empresas:** https://marvinfacio.github.io/servicios-medicos-saf-web/empresas/
 
 ## Trabajar en la página
 ```bash
@@ -12,17 +13,18 @@ npm run build    # genera la versión final en dist/
 ```
 
 ## Dónde cambiar cosas
-- Textos, servicios, horario, enlaces (WhatsApp, Instagram, Maps): `src/data.js`
-- Secciones: `src/components/`
-- Colores y fuente: bloque `@theme` en `src/index.css`
-- Animaciones: `src/App.jsx`
-- Imágenes: carpeta `public/`
+- **Textos en español e inglés**, servicios, horario, médicos, perfil y enlaces: `src/data.js`. Cada texto tiene la forma `{ es: '…', en: '…' }`.
+- **Publicidades de los servicios:** reemplaza la imagen en `public/img/ads/` con el mismo nombre (`control-metabolico.png`, `medicina-general.png`, `verrugas.png`, `ekg.png`), en formato 1080×1350.
+- **Foto del doctor:** `public/img/dr-marvin-facio.jpg`.
+- **Secciones:** `src/components/`. La página para empresas está en `src/pages/Empresas.jsx`.
+- **Colores y fuente:** bloque `@theme` en `src/index.css`.
+- **Animaciones:** `src/App.jsx`.
 
 ## Publicación
 Cada `git push` a `main` publica la página automáticamente con GitHub Actions (`.github/workflows/deploy.yml`).
 
 ## Pendientes
-- [ ] Fotos del consultorio y del doctor (`public/`).
+- [ ] Contenido de la página para empresas.
 
 ## Colores (del logo)
 | Color | Hex |
