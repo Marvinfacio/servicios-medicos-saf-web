@@ -3,9 +3,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// GitHub Pages sirve el sitio en /servicios-medicos-saf-web/
+// GitHub Pages sirve el sitio en la raíz del dominio propio (serviciosmedicossaf.com)
 export default defineConfig({
-  base: '/servicios-medicos-saf-web/',
+  base: '/',
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {
