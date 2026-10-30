@@ -29,7 +29,9 @@ export default function Services() {
                 className="relative block cursor-zoom-in overflow-hidden bg-surface-alt focus-visible:outline-3 focus-visible:-outline-offset-3 focus-visible:outline-cyan"
               >
                 <img
-                  src={t(s.ad)}
+                  src={t(s.ad).src}
+                  srcSet={t(s.ad).srcSet}
+                  sizes="(min-width: 1024px) 240px, (min-width: 640px) 45vw, 92vw"
                   alt=""
                   width="1080"
                   height="1350"

@@ -2,13 +2,21 @@
 
 const img = (path) => `${import.meta.env.BASE_URL}img/${path}`
 
+// Imagen WebP en varios anchos (los genera `npm run images` desde assets-src/)
+const responsive = (base, widths) => ({
+  src: img(`${base}-${widths.at(-1)}.webp`),
+  srcSet: widths.map((w) => `${img(`${base}-${w}.webp`)} ${w}w`).join(', '),
+})
+
+const ad = (name) => ({ es: responsive(`ads/es/${name}`, [700, 1080]), en: responsive(`ads/en/${name}`, [700, 1080]) })
+
 export const doctor = {
   name: 'Dr. Marvin Facio',
   specialty: { es: 'Medicina general y metabólica', en: 'General & metabolic medicine' },
   cedula: '12419385',
   conamege: '25/01/08-221-22815',
   university: 'Universidad Autónoma de Chihuahua',
-  photo: img('dr-marvin-facio.jpg'),
+  photo: responsive('dr-marvin-facio', [560, 896]),
 }
 
 const address = 'Av. José María Iglesias 4912, Las Granjas, 31100 Chihuahua, Chih.'
@@ -48,7 +56,7 @@ export const services = [
       es: ['Sobrepeso y obesidad', 'Resistencia a la insulina', 'Diabetes', 'Colesterol y triglicéridos', 'Hígado graso', 'SOP'],
       en: ['Overweight & obesity', 'Insulin resistance', 'Diabetes', 'Cholesterol & triglycerides', 'Fatty liver', 'PCOS'],
     },
-    ad: { es: img('ads/es/control-metabolico.png'), en: img('ads/en/control-metabolico.png') },
+    ad: ad('control-metabolico'),
     accent: 'bg-cyan',
   },
   {
@@ -62,7 +70,7 @@ export const services = [
       es: ['Lavado de oídos', 'Suturas', 'Retiro de puntos', 'Inyecciones'],
       en: ['Ear wash', 'Stitches', 'Stitch removal', 'Injections'],
     },
-    ad: { es: img('ads/es/medicina-general.png'), en: img('ads/en/medicina-general.png') },
+    ad: ad('medicina-general'),
     accent: 'bg-teal',
   },
   {
@@ -72,7 +80,7 @@ export const services = [
       es: 'Con electrocauterio y anestesia local. Atención discreta y confidencial.',
       en: 'Electrocautery with local anesthesia. Discreet and confidential care.',
     },
-    ad: { es: img('ads/es/verrugas.png'), en: img('ads/en/verrugas.png') },
+    ad: ad('verrugas'),
     accent: 'bg-magenta',
   },
   {
@@ -82,7 +90,7 @@ export const services = [
       es: 'Resultado inmediato en el consultorio. Útil antes de cirugías, trámites laborales y deporte.',
       en: 'Immediate results in the office. Useful before surgery, for work paperwork and sports.',
     },
-    ad: { es: img('ads/es/ekg.png'), en: img('ads/en/ekg.png') },
+    ad: ad('ekg'),
     accent: 'bg-navy',
   },
 ]

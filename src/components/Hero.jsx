@@ -34,7 +34,9 @@ export default function Hero() {
             className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-surface-alt shadow-2xl shadow-navy/25 ring-4 ring-white"
           >
             <img
-              src={doctor.photo}
+              src={doctor.photo.src}
+              srcSet={doctor.photo.srcSet}
+              sizes="(min-width: 768px) 380px, min(72vw, 320px)"
               alt={t(ui.hero.photoAlt)}
               width="896"
               height="1280"
