@@ -15,9 +15,19 @@ function initialLang() {
     const saved = localStorage.getItem(STORAGE_KEY)
     if (saved === 'es' || saved === 'en') return saved
   } catch {
-    // almacenamiento bloqueado: se usa el idioma del navegador
+    // almacenamiento bloqueado: se usa el español
   }
-  return navigator.language?.toLowerCase().startsWith('en') ? 'en' : 'es'
+  // Español por defecto, también para buscadores con navegador en inglés
+  return 'es'
+}
+
+// El canónico apunta a la versión del idioma que se muestra (?lang=es o ?lang=en)
+function updateCanonical(lang) {
+  const link = document.querySelector('link[rel="canonical"]')
+  if (!link) return
+  const url = new URL(link.href)
+  url.searchParams.set('lang', lang)
+  link.href = url.toString()
 }
 
 export function LanguageProvider({ title, children }) {
@@ -26,6 +36,7 @@ export function LanguageProvider({ title, children }) {
   useEffect(() => {
     document.documentElement.lang = lang === 'en' ? 'en' : 'es-MX'
     if (title) document.title = title[lang]
+    updateCanonical(lang)
     try {
       localStorage.setItem(STORAGE_KEY, lang)
     } catch {
