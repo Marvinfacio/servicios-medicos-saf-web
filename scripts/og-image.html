@@ -1,0 +1,64 @@
+<!doctype html>
+<!--
+  Plantilla de la imagen para compartir (1200×630).
+  Para regenerar public/og-image.png:
+  chrome --headless=new --hide-scrollbars --window-size=1200,630 --screenshot=public/og-image.png scripts/og-image.html
+-->
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=block" rel="stylesheet">
+  <style>
+    * { margin: 0; box-sizing: border-box; }
+    html, body { width: 1200px; height: 630px; overflow: hidden; }
+    body {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      color: #122D3E;
+      background:
+        radial-gradient(ellipse at top right, rgba(45, 196, 228, .16), transparent 60%),
+        radial-gradient(ellipse at bottom left, rgba(20, 163, 152, .12), transparent 55%),
+        #fff;
+      display: flex; flex-direction: column;
+    }
+    .strip { display: grid; grid-template-columns: repeat(4, 1fr); height: 14px; }
+    .strip span:nth-child(1) { background: #14A398; }
+    .strip span:nth-child(2) { background: #2DC4E4; }
+    .strip span:nth-child(3) { background: #D4237A; }
+    .strip span:nth-child(4) { background: #122D3E; }
+    main { flex: 1; display: flex; align-items: center; gap: 64px; padding: 0 90px; }
+    svg { width: 250px; height: 250px; flex-shrink: 0; }
+    .brand { font-size: 30px; font-weight: 700; }
+    .brand b { font-weight: 800; }
+    h1 { margin-top: 18px; font-size: 76px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+    .spec { margin-top: 16px; font-size: 34px; font-weight: 500; color: #0B7A72; }
+    .pill {
+      margin-top: 34px; display: inline-flex; align-items: center; gap: 12px;
+      background: #122D3E; color: #fff; border-radius: 999px; padding: 14px 28px;
+      font-size: 28px; font-weight: 700;
+    }
+    .pill svg { width: 28px; height: 28px; }
+    .place { margin-top: 22px; font-size: 24px; color: #4E6474; }
+  </style>
+</head>
+<body>
+  <div class="strip"><span></span><span></span><span></span><span></span></div>
+  <main>
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <rect x="38" y="4" width="22" height="36" rx="9" fill="#14A398"/>
+      <rect x="54" y="35" width="36" height="22" rx="9" fill="#2DC4E4"/>
+      <rect x="40" y="56" width="22" height="36" rx="9" fill="#D4237A"/>
+      <rect x="10" y="38" width="36" height="22" rx="9" fill="#122D3E"/>
+    </svg>
+    <div>
+      <p class="brand">Servicios Médicos <b>SaF</b></p>
+      <h1>Dr. Marvin Facio</h1>
+      <p class="spec">Medicina general y metabólica</p>
+      <p class="pill" lang="en">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.6A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+        We speak English
+      </p>
+      <p class="place">Chihuahua, Chih. · Agenda por WhatsApp</p>
+    </div>
+  </main>
+</body>
+</html>
