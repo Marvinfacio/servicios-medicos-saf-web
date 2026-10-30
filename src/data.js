@@ -19,7 +19,6 @@ export const doctor = {
   photo: responsive('dr-marvin-facio', [560, 896]),
 }
 
-const address = 'Av. José María Iglesias 4912, Las Granjas, 31100 Chihuahua, Chih.'
 
 export const contact = {
   whatsappDisplay: '56 6643 4543',
@@ -32,7 +31,9 @@ export const links = {
   whatsappWith: (text) => `https://wa.me/525666434543?text=${encodeURIComponent(text)}`,
   reception: 'tel:+526143461230',
   instagram: 'https://www.instagram.com/serviciosmedicossaf',
-  maps: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`,
+  // Perfil de Empresa de Google: en el celular abre Maps con las reseñas y la ruta
+  maps: 'https://maps.google.com/?cid=12067484894196096710',
+  reviews: 'https://share.google/BUNNZYr5uLaDcKtHE',
   home: import.meta.env.BASE_URL,
   business: `${import.meta.env.BASE_URL}empresas/`,
 }
@@ -197,6 +198,7 @@ export const ui = {
     closed: { es: 'Cerrado', en: 'Closed' },
     locationTitle: { es: 'Ubicación', en: 'Location' },
     openMaps: { es: 'Abrir en Google Maps →', en: 'Open in Google Maps →' },
+    reviews: { es: 'Ver reseñas en Google', en: 'See Google reviews' },
     reception: { es: 'Recepción y agenda', en: 'Reception & appointments' },
     payments: { es: 'Aceptamos todos los métodos de pago', en: 'All payment methods accepted' },
   },

@@ -1,6 +1,6 @@
 import { useLang } from '../i18n.jsx'
 import { addressLines, contact, doctor, links, schedule, ui } from '../data.js'
-import { PhoneIcon, PinIcon } from './Icons.jsx'
+import { PhoneIcon, PinIcon, StarIcon } from './Icons.jsx'
 
 const focus = 'focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-cyan'
 
@@ -61,6 +61,15 @@ export default function Visit() {
             >
               <PinIcon className="size-5 shrink-0" />
               {t(ui.visit.openMaps)}
+            </a>
+            <a
+              href={links.reviews}
+              target="_blank"
+              rel="noopener"
+              className={`inline-flex min-h-12 items-center gap-2.5 rounded-full border-[1.5px] border-line bg-white px-5 font-bold text-navy transition-[transform,border-color] duration-150 select-none hover:border-navy active:scale-[0.97] ${focus}`}
+            >
+              <StarIcon className="size-5 shrink-0 text-[#F5B301]" />
+              {t(ui.visit.reviews)}
             </a>
             <a
               href={links.reception}
