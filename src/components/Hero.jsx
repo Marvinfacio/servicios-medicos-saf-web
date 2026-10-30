@@ -49,7 +49,7 @@ export default function Hero() {
             data-anim="badge"
             className="absolute -bottom-5 -left-4 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-xl shadow-navy/15 sm:-left-8"
           >
-            <span className="text-3xl leading-none font-extrabold text-teal-dark">6</span>
+            <span className="text-3xl leading-none font-extrabold text-teal-dark">{doctor.yearsOfExperience}</span>
             <span className="max-w-[7.5rem] text-sm leading-tight font-semibold">{t(ui.hero.experience)}</span>
           </div>
           <div

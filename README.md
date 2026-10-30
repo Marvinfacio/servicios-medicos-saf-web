@@ -17,6 +17,7 @@ npm run images   # vuelve a generar las imágenes WebP (ver abajo)
 
 ## Dónde cambiar cosas
 - **Textos en español e inglés**, servicios, horario, médicos, perfil y enlaces: `src/data.js`. Cada texto tiene la forma `{ es: '…', en: '…' }`.
+- **Años de experiencia:** se calculan solos desde `practiceSince` (año en que empezó a ejercer) en `src/data.js`.
 - **Volantes de los servicios:**
   1. Reemplaza el PNG original (1080×1350) en `assets-src/ads/es/` o `assets-src/ads/en/`, con el mismo nombre: `control-metabolico.png`, `medicina-general.png`, `verrugas.png` o `ekg.png`.
   2. Ejecuta `npm run images`. Genera las versiones WebP en `public/img/ads/`: 700 px para las tarjetas y 1080 px para el visor.

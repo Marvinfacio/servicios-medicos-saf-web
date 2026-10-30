@@ -10,6 +10,10 @@ const responsive = (base, widths) => ({
 
 const ad = (name) => ({ es: responsive(`ads/es/${name}`, [700, 1080]), en: responsive(`ads/en/${name}`, [700, 1080]) })
 
+// Los años de experiencia se calculan solos a partir del año en que empezó a ejercer
+const practiceSince = 2020
+const years = String(new Date().getFullYear() - practiceSince)
+
 export const doctor = {
   name: 'Dr. Marvin Facio',
   specialty: { es: 'Medicina general y metabólica', en: 'General & metabolic medicine' },
@@ -17,6 +21,7 @@ export const doctor = {
   conamege: '25/01/08-221-22815',
   university: 'Universidad Autónoma de Chihuahua',
   photo: responsive('dr-marvin-facio', [560, 896]),
+  yearsOfExperience: years,
 }
 
 
@@ -139,16 +144,16 @@ export const schedule = [
 export const profile = {
   paragraphs: {
     es: [
-      'Soy médico general originario de la ciudad de Chihuahua, con 6 años de experiencia. Actualmente colaboro con la Dra. Perla Hernández, endocrinóloga, en el Hospital Sierra Alta, y atiendo en mi consultorio particular en Nexcare Consultorios.',
+      `Soy médico general originario de la ciudad de Chihuahua, con ${years} años de experiencia. Actualmente colaboro con la Dra. Perla Hernández, endocrinóloga, en el Hospital Sierra Alta, y atiendo en mi consultorio particular en Nexcare Consultorios.`,
       'Ofrezco consulta general y metabólica para ayudarte a mejorar tu salud metabólica, con estrategias personalizadas, seguimiento cercano y tratamiento médico cuando está indicado. También realizo procedimientos en consultorio como electrocardiograma, retiro de verrugas y retiro de implante anticonceptivo, entre otros.',
     ],
     en: [
-      'I am a general practitioner from Chihuahua with 6 years of experience. I currently work alongside Dr. Perla Hernández, endocrinologist, at Hospital Sierra Alta, and see patients at my private practice in Nexcare Consultorios.',
+      `I am a general practitioner from Chihuahua with ${years} years of experience. I currently work alongside Dr. Perla Hernández, endocrinologist, at Hospital Sierra Alta, and see patients at my private practice in Nexcare Consultorios.`,
       'I offer general and metabolic consultations to help you improve your metabolic health, with personalized strategies, close follow-up and medical treatment when indicated. I also perform in-office procedures such as electrocardiograms, wart removal and contraceptive implant removal, among others.',
     ],
   },
   highlights: [
-    { value: '6', label: { es: 'años de experiencia', en: 'years of experience' } },
+    { value: years, label: { es: 'años de experiencia', en: 'years of experience' } },
     { value: '+', label: { es: 'Colaboración con endocrinología · Hospital Sierra Alta', en: 'Works with endocrinology · Hospital Sierra Alta' } },
     { value: '✓', label: { es: 'Seguimiento personalizado', en: 'Personalized follow-up' } },
   ],
