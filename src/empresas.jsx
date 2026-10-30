@@ -11,7 +11,7 @@ gsap.registerPlugin(useGSAP)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <LanguageProvider title={ui.businessTitle}>
+    <LanguageProvider title={ui.businessTitle} description={ui.businessDescription}>
       <Empresas />
     </LanguageProvider>
   </StrictMode>,

@@ -40,12 +40,13 @@ function updateUrl(lang) {
   history.replaceState(history.state, '', url)
 }
 
-export function LanguageProvider({ title, children }) {
+export function LanguageProvider({ title, description, children }) {
   const [lang, setLang] = useState(initialLang)
 
   useEffect(() => {
     document.documentElement.lang = lang === 'en' ? 'en' : 'es-MX'
     if (title) document.title = title[lang]
+    if (description) document.querySelector('meta[name="description"]')?.setAttribute('content', description[lang])
     updateCanonical(lang)
     updateUrl(lang)
     try {
@@ -53,7 +54,7 @@ export function LanguageProvider({ title, children }) {
     } catch {
       // sin almacenamiento: el idioma solo dura esta visita
     }
-  }, [lang, title])
+  }, [lang, title, description])
 
   // t() acepta { es, en } o un valor simple y devuelve el texto del idioma actual
   const t = useCallback(

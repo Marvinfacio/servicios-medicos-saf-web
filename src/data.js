@@ -160,9 +160,19 @@ export const ui = {
     es: 'Dr. Marvin Facio · Medicina general y metabólica | Servicios Médicos SaF',
     en: 'Dr. Marvin Facio · General & metabolic medicine | Servicios Médicos SaF',
   },
+  // Descripción para buscadores; el texto en español debe coincidir con index.html
+  description: {
+    es: 'Consultorio del Dr. Marvin Facio en Chihuahua: medicina general y metabólica, eliminación de verrugas y electrocardiograma. Agenda tu cita por WhatsApp.',
+    en: "Dr. Marvin Facio's clinic in Chihuahua: general and metabolic medicine, wart removal and electrocardiograms. English-speaking doctors. Book your appointment on WhatsApp.",
+  },
   businessTitle: {
     es: 'Servicios médicos para empresas | Servicios Médicos SaF',
     en: 'Occupational health for businesses | Servicios Médicos SaF',
+  },
+  // El texto en español debe coincidir con empresas/index.html
+  businessDescription: {
+    es: 'Servicios Médicos SaF para empresas en Chihuahua: certificados médicos, exámenes de aptitud laboral y atención para tu personal.',
+    en: 'Servicios Médicos SaF for businesses in Chihuahua: medical certificates, fitness-for-work exams and care for your staff.',
   },
   nav: {
     services: { es: 'Servicios', en: 'Services' },

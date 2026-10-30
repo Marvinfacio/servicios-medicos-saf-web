@@ -12,7 +12,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <LanguageProvider title={ui.title}>
+    <LanguageProvider title={ui.title} description={ui.description}>
       <App />
     </LanguageProvider>
   </StrictMode>,
