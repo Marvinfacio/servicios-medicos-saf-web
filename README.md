@@ -2,8 +2,8 @@
 
 Sitio del consultorio hecho con **React + Vite**, **Tailwind CSS v4** y animaciones con **GSAP**. Disponible en español (idioma por defecto) e inglés.
 
-**En línea:** https://marvinfacio.github.io/servicios-medicos-saf-web/
-**Empresas:** https://marvinfacio.github.io/servicios-medicos-saf-web/empresas/
+**En línea:** https://serviciosmedicossaf.com/
+**Empresas:** https://serviciosmedicossaf.com/empresas/
 
 Para abrir un idioma desde un enlace o un anuncio: `?lang=es` o `?lang=en` al final de la dirección.
 
@@ -34,7 +34,7 @@ Cada `git push` a `main` publica la página automáticamente con GitHub Actions 
 
 ## Pendientes
 - [ ] Aviso de privacidad: esperando la versión corregida del PDF (falta el correo de contacto). Publicarlo en `public/` y enlazarlo desde el pie de página.
-- [ ] `robots.txt`: hacerlo cuando se conecte el dominio propio. En GitHub Pages bajo subruta vive en la raíz del dominio. `public/sitemap.xml` ya existe.
+- [ ] `robots.txt`: ya se puede agregar en `public/` ahora que el sitio vive en la raíz de serviciosmedicossaf.com. `public/sitemap.xml` ya existe.
 - [ ] Contenido de la página para empresas.
 
 ## Colores (del logo)
