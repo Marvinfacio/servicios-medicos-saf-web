@@ -158,7 +158,7 @@ export const ui = {
     directions: { es: 'Cómo llegar', en: 'Directions' },
     instagram: { es: 'Instagram', en: 'Instagram' },
     experience: { es: 'años de experiencia', en: 'years of experience' },
-    english: { es: 'We speak English', en: 'Hablamos español' },
+    english: { es: 'We speak English', en: 'English-speaking doctors' },
     photoAlt: { es: 'Dr. Marvin Facio con bata y estetoscopio', en: 'Dr. Marvin Facio in a white coat with a stethoscope' },
   },
   services: {

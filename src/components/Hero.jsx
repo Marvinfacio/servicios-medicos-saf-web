@@ -52,7 +52,7 @@ export default function Hero() {
           </div>
           <div
             data-anim="badge"
-            lang={t({ es: 'en', en: 'es' })}
+            lang="en"
             className="absolute -top-3 -right-3 flex items-center gap-2 rounded-full bg-navy px-4 py-2 text-sm font-bold text-white shadow-lg shadow-navy/25 sm:-right-6"
           >
             <ChatIcon className="size-4" />
