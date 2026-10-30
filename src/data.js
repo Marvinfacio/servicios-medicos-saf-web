@@ -221,8 +221,8 @@ export const ui = {
     eyebrow: { es: 'Conóceme', en: 'About me' },
     title: { es: 'Atención médica con enfoque metabólico', en: 'Medical care with a metabolic focus' },
     cta: {
-      es: 'Si necesitas una valoración integral, no dudes en contactarnos. Nos encantaría ayudarte a retomar tu salud metabólica.',
-      en: "If you need a comprehensive evaluation, don't hesitate to contact us. We'd love to help you get your metabolic health back on track.",
+      es: 'Si necesitas una valoración integral, no dudes en contactarnos. Nos encantaría ayudarte a cuidar tu salud metabólica.',
+      en: "If you need a comprehensive evaluation, don't hesitate to contact us. We'd love to help you take care of your metabolic health.",
     },
   },
   visit: {
