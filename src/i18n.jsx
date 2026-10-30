@@ -30,6 +30,16 @@ function updateCanonical(lang) {
   link.href = url.toString()
 }
 
+// Si la dirección trae ?lang, se actualiza al cambiar de idioma para que recargar,
+// volver atrás o compartir el enlace conserve el idioma elegido
+function updateUrl(lang) {
+  const url = new URL(window.location.href)
+  const current = url.searchParams.get('lang')
+  if (current === null || current === lang) return
+  url.searchParams.set('lang', lang)
+  history.replaceState(history.state, '', url)
+}
+
 export function LanguageProvider({ title, children }) {
   const [lang, setLang] = useState(initialLang)
 
@@ -37,6 +47,7 @@ export function LanguageProvider({ title, children }) {
     document.documentElement.lang = lang === 'en' ? 'en' : 'es-MX'
     if (title) document.title = title[lang]
     updateCanonical(lang)
+    updateUrl(lang)
     try {
       localStorage.setItem(STORAGE_KEY, lang)
     } catch {
