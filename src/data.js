@@ -58,6 +58,10 @@ export const services = [
       en: ['Overweight & obesity', 'Insulin resistance', 'Diabetes', 'Cholesterol & triglycerides', 'Fatty liver', 'PCOS'],
     },
     ad: ad('control-metabolico'),
+    adAlt: {
+      es: 'Volante de la consulta de control metabólico y de peso, precio de apertura $500 MXN. Atiende sobrepeso y obesidad, resistencia a la insulina, diabetes, colesterol y triglicéridos altos, hígado graso y SOPM. Informes y citas: 614 346 1230 y WhatsApp 56 6643 4543.',
+      en: 'Flyer for the metabolic and weight management visit, opening price $500 MXN. Covers overweight and obesity, insulin resistance, diabetes, high cholesterol and triglycerides, fatty liver and PMOS. Information and appointments: 614 346 1230 and WhatsApp 56 6643 4543.',
+    },
     accent: 'bg-cyan',
   },
   {
@@ -72,6 +76,10 @@ export const services = [
       en: ['Ear wash', 'Stitches', 'Stitch removal', 'Injections'],
     },
     ad: ad('medicina-general'),
+    adAlt: {
+      es: 'Volante de la consulta de medicina general con la Dra. Isabel Orozco Gutiérrez y el Dr. Marvin Facio: infecciones, malestares comunes y control de niño sano; lavado de oídos, suturas, retiro de puntos y aplicación de medicamentos. Descuento en estudios de imagen y laboratorio. Informes y citas: 614 346 1230 y WhatsApp 56 6643 4543.',
+      en: 'Flyer for the general medical consultation with Dr. Isabel Orozco Gutiérrez and Dr. Marvin Facio: infections, common illnesses and well-child checkups; ear irrigation, sutures, stitch removal and shots. Discount on imaging and lab tests. Information and appointments: 614 346 1230 and WhatsApp 56 6643 4543.',
+    },
     accent: 'bg-teal',
   },
   {
@@ -82,6 +90,10 @@ export const services = [
       en: 'Electrocautery with local anesthesia. Discreet and confidential care.',
     },
     ad: ad('verrugas'),
+    adAlt: {
+      es: 'Volante de eliminación de verrugas con electrocauterio y anestesia: hasta 7 verrugas $350, hasta 15 verrugas $600 y de 16 a 30 verrugas $1,100. Informes y citas: 614 346 1230 y WhatsApp 56 6643 4543.',
+      en: 'Flyer for wart removal with electrocautery and anesthesia: up to 7 warts $350, up to 15 warts $600 and 16 to 30 warts $1,100. Information and appointments: 614 346 1230 and WhatsApp 56 6643 4543.',
+    },
     accent: 'bg-magenta',
   },
   {
@@ -92,6 +104,10 @@ export const services = [
       en: 'Immediate results in the office. Useful before surgery, for work paperwork and sports.',
     },
     ad: ad('ekg'),
+    adAlt: {
+      es: 'Volante del electrocardiograma, precio de apertura $300 MXN, resultado inmediato y previa cita. Informes y citas: 614 346 1230 y WhatsApp 56 6643 4543.',
+      en: 'Flyer for the electrocardiogram, opening price $300 MXN, immediate results, by appointment. Information and appointments: 614 346 1230 and WhatsApp 56 6643 4543.',
+    },
     accent: 'bg-navy',
   },
 ]
@@ -155,6 +171,7 @@ export const ui = {
     business: { es: 'Para empresas', en: 'For businesses' },
     home: { es: 'Consultorio', en: 'Clinic' },
     language: { es: 'Idioma', en: 'Language' },
+    sections: { es: 'Secciones', en: 'Sections' },
   },
   hero: {
     eyebrow: { es: 'Medicina general y metabólica · Chihuahua', en: 'General & metabolic medicine · Chihuahua' },
@@ -173,8 +190,8 @@ export const ui = {
   services: {
     title: { es: 'Servicios', en: 'Services' },
     subtitle: {
-      es: 'Toca un servicio para ver su promoción completa.',
-      en: 'Tap a service to see its full flyer.',
+      es: 'Toca o haz clic en un servicio para ver su volante completo.',
+      en: 'Tap or click a service to see its full flyer.',
     },
     viewAd: { es: 'Ver promoción', en: 'View flyer' },
     ask: { es: 'Pregunta por este servicio', en: 'Ask about this service' },

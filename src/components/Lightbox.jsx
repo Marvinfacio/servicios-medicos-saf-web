@@ -35,7 +35,7 @@ export default function Lightbox({ service, onClose }) {
       <div ref={panel} className="flex flex-col items-center gap-4">
         <img
           src={t(service.ad).src}
-          alt={title}
+          alt={t(service.adAlt)}
           width="1080"
           height="1350"
           className="h-auto max-h-[calc(100svh-9rem)] w-auto max-w-[min(92vw,540px)] rounded-2xl shadow-2xl"

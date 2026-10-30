@@ -95,7 +95,7 @@ export default function Hero() {
           </div>
 
           <p data-anim="hero" className="mt-6 text-sm text-muted">
-            {t(doctor.specialty)} · Céd. Prof. {doctor.cedula} · CONAMEGE {doctor.conamege}
+            {t(doctor.specialty)} · Céd. Prof. {doctor.cedula} · <span className="whitespace-nowrap">CONAMEGE {doctor.conamege}</span>
           </p>
         </div>
       </div>

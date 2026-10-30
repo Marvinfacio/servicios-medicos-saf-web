@@ -37,7 +37,7 @@ export default function Header({ page = 'home' }) {
         </a>
 
         {isHome && (
-          <nav aria-label="Secciones" className="hidden items-center gap-6 text-[0.95rem] font-semibold text-muted lg:flex">
+          <nav aria-label={t(ui.nav.sections)} className="hidden items-center gap-6 text-[0.95rem] font-semibold text-muted lg:flex">
             {sections.map((s) => (
               <a key={s.href} href={s.href} className={`rounded transition-colors hover:text-navy ${focus}`}>
                 {t(s.label)}

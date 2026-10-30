@@ -12,7 +12,7 @@ export default function Footer() {
             {t(ui.footer.by)} <strong className="text-navy">Servicios Médicos SaF</strong>
           </p>
           <p className="text-sm">
-            {doctor.name} · Céd. Prof. {doctor.cedula} · CONAMEGE {doctor.conamege}
+            {doctor.name} · Céd. Prof. {doctor.cedula} · <span className="whitespace-nowrap">CONAMEGE {doctor.conamege}</span>
           </p>
           <p className="text-sm">
             {t(ui.footer.cofepris)}: {contact.cofepris}
@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
         <p className="text-sm">
           WhatsApp{' '}
-          <a href={links.whatsapp} target="_blank" rel="noopener" className="font-semibold text-teal-dark hover:underline">
+          <a href={links.whatsapp} target="_blank" rel="noopener" className="inline-flex min-h-6 items-center py-1 font-semibold text-teal-dark hover:underline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-cyan">
             {contact.whatsappDisplay}
           </a>{' '}
           · © {new Date().getFullYear()}
