@@ -59,8 +59,8 @@ export const services = [
       en: 'Personalized plan with in-office measurements, nutrition, physical activity and medical treatment when indicated.',
     },
     tags: {
-      es: ['Sobrepeso y obesidad', 'Resistencia a la insulina', 'Diabetes', 'Colesterol y triglicéridos', 'Hígado graso', 'SOP'],
-      en: ['Overweight & obesity', 'Insulin resistance', 'Diabetes', 'Cholesterol & triglycerides', 'Fatty liver', 'PCOS'],
+      es: ['Sobrepeso y obesidad', 'Resistencia a la insulina', 'Diabetes', 'Colesterol y triglicéridos', 'Hígado graso', 'SOPM (antes SOPQ)'],
+      en: ['Overweight & obesity', 'Insulin resistance', 'Diabetes', 'Cholesterol & triglycerides', 'Fatty liver', 'PMOS (formerly PCOS)'],
     },
     ad: ad('control-metabolico'),
     adAlt: {
