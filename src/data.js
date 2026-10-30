@@ -48,7 +48,7 @@ export const services = [
       es: ['Sobrepeso y obesidad', 'Resistencia a la insulina', 'Diabetes', 'Colesterol y triglicéridos', 'Hígado graso', 'SOP'],
       en: ['Overweight & obesity', 'Insulin resistance', 'Diabetes', 'Cholesterol & triglycerides', 'Fatty liver', 'PCOS'],
     },
-    ad: img('ads/control-metabolico.png'),
+    ad: { es: img('ads/es/control-metabolico.png'), en: img('ads/en/control-metabolico.png') },
     accent: 'bg-cyan',
   },
   {
@@ -62,7 +62,7 @@ export const services = [
       es: ['Lavado de oídos', 'Suturas', 'Retiro de puntos', 'Inyecciones'],
       en: ['Ear wash', 'Stitches', 'Stitch removal', 'Injections'],
     },
-    ad: img('ads/medicina-general.png'),
+    ad: { es: img('ads/es/medicina-general.png'), en: img('ads/en/medicina-general.png') },
     accent: 'bg-teal',
   },
   {
@@ -72,7 +72,7 @@ export const services = [
       es: 'Con electrocauterio y anestesia local. Atención discreta y confidencial.',
       en: 'Electrocautery with local anesthesia. Discreet and confidential care.',
     },
-    ad: img('ads/verrugas.png'),
+    ad: { es: img('ads/es/verrugas.png'), en: img('ads/en/verrugas.png') },
     accent: 'bg-magenta',
   },
   {
@@ -82,7 +82,7 @@ export const services = [
       es: 'Resultado inmediato en el consultorio. Útil antes de cirugías, trámites laborales y deporte.',
       en: 'Immediate results in the office. Useful before surgery, for work paperwork and sports.',
     },
-    ad: img('ads/ekg.png'),
+    ad: { es: img('ads/es/ekg.png'), en: img('ads/en/ekg.png') },
     accent: 'bg-navy',
   },
 ]
@@ -168,7 +168,6 @@ export const ui = {
       en: 'Tap a service to see its full flyer.',
     },
     viewAd: { es: 'Ver promoción', en: 'View flyer' },
-    adNote: { es: '', en: 'Flyer in Spanish' },
     ask: { es: 'Pregunta por este servicio', en: 'Ask about this service' },
     askText: { es: 'Hola, quiero información sobre: ', en: 'Hi, I would like information about: ' },
     close: { es: 'Cerrar', en: 'Close' },

@@ -34,8 +34,8 @@ export default function Lightbox({ service, onClose }) {
     >
       <div ref={panel} className="flex flex-col items-center gap-4">
         <img
-          src={service.ad}
-          alt={`${title}${t(ui.services.adNote) ? ` (${t(ui.services.adNote)})` : ''}`}
+          src={t(service.ad)}
+          alt={title}
           width="1080"
           height="1350"
           className="h-auto max-h-[calc(100svh-9rem)] w-auto max-w-[min(92vw,540px)] rounded-2xl shadow-2xl"

@@ -29,7 +29,7 @@ export default function Services() {
                 className="relative block cursor-zoom-in overflow-hidden bg-surface-alt focus-visible:outline-3 focus-visible:-outline-offset-3 focus-visible:outline-cyan"
               >
                 <img
-                  src={s.ad}
+                  src={t(s.ad)}
                   alt=""
                   width="1080"
                   height="1350"
@@ -39,7 +39,6 @@ export default function Services() {
                 />
                 <span className="absolute right-3 bottom-3 rounded-full bg-navy/90 px-3 py-1.5 text-xs font-bold text-white">
                   {t(ui.services.viewAd)}
-                  {t(ui.services.adNote) && <span className="font-medium opacity-80"> · {t(ui.services.adNote)}</span>}
                 </span>
               </button>
 
