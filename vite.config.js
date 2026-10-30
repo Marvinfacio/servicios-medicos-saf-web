@@ -12,6 +12,7 @@ export default defineConfig({
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
         empresas: resolve(import.meta.dirname, 'empresas/index.html'),
+        notfound: resolve(import.meta.dirname, '404.html'),
       },
     },
   },

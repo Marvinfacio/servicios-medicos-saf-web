@@ -238,4 +238,17 @@ export const ui = {
     },
     back: { es: '← Volver al consultorio', en: '← Back to the clinic' },
   },
+  notFound: {
+    pageTitle: {
+      es: 'Página no encontrada | Servicios Médicos SaF',
+      en: 'Page not found | Servicios Médicos SaF',
+    },
+    code: { es: 'Error 404', en: 'Error 404' },
+    title: { es: 'Página no encontrada', en: 'Page not found' },
+    text: {
+      es: 'La página que buscas no existe o cambió de dirección. Puedes volver al inicio o escribirnos por WhatsApp.',
+      en: "The page you are looking for doesn't exist or has moved. You can go back home or message us on WhatsApp.",
+    },
+    home: { es: 'Volver al inicio', en: 'Back to home' },
+  },
 }
