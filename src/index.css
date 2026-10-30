@@ -1,4 +1,6 @@
 @import "tailwindcss";
+/* Fuente servida desde el propio sitio (sin bloquear el render con Google Fonts) */
+@import "@fontsource-variable/plus-jakarta-sans";
 
 /* Paleta tomada del logo de Servicios Médicos SaF */
 @theme {
@@ -12,7 +14,7 @@
   --color-line: #E2E9EC;
   --color-surface-alt: #F4F8F9;
 
-  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: "Plus Jakarta Sans Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
 }
