@@ -89,7 +89,7 @@ export const services = [
 
 export const team = {
   marvin: { name: 'Dr. Marvin Facio', cedula: 'Céd. Prof. 12419385' },
-  isabel: { name: 'Dra. Isabel Orozco Gutiérrez', cedula: 'Céd. 26653PROV S-IV' },
+  isabel: { name: 'Dra. Isabel Orozco Gutiérrez', cedula: 'Céd. 26635 PROV-SIV' },
   paulina: { name: 'Dra. Paulina Escobedo', cedula: 'Céd. Prof. 15962293' },
 }
 
