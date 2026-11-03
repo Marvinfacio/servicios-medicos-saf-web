@@ -36,6 +36,7 @@ export const links = {
   whatsappWith: (text) => `https://wa.me/525666434543?text=${encodeURIComponent(text)}`,
   reception: 'tel:+526143461230',
   instagram: 'https://www.instagram.com/serviciosmedicossaf',
+  facebook: 'https://www.facebook.com/profile.php?id=61595790915681',
   // Perfil de Empresa de Google: en el celular abre Maps con las reseñas y la ruta
   maps: 'https://maps.google.com/?cid=12067484894196096710',
   reviews: 'https://share.google/BUNNZYr5uLaDcKtHE',

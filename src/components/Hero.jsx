@@ -1,6 +1,6 @@
 import { useLang } from '../i18n.jsx'
 import { doctor, links, ui } from '../data.js'
-import { ChatIcon, InstagramIcon, PhoneIcon, PinIcon, WhatsAppIcon } from './Icons.jsx'
+import { ChatIcon, FacebookIcon, InstagramIcon, PhoneIcon, PinIcon, WhatsAppIcon } from './Icons.jsx'
 
 const btnBase =
   'inline-flex min-h-13 select-none items-center justify-center gap-2.5 rounded-full font-bold ' +
@@ -91,6 +91,9 @@ export default function Hero() {
             </a>
             <a className={btnIcon} href={links.instagram} target="_blank" rel="noopener" aria-label="Instagram">
               <InstagramIcon className="size-5.5" />
+            </a>
+            <a className={btnIcon} href={links.facebook} target="_blank" rel="noopener" aria-label="Facebook">
+              <FacebookIcon className="size-5.5" />
             </a>
           </div>
 
