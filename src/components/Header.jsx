@@ -5,7 +5,7 @@ import LangToggle from './LangToggle.jsx'
 
 const focus = 'focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-cyan'
 
-// page: 'home' muestra los enlaces a secciones; 'business' muestra el regreso al consultorio
+// page: 'home' muestra los enlaces a secciones; 'business' y 'blog' muestran el regreso al consultorio
 export default function Header({ page = 'home' }) {
   const { t } = useLang()
   const isHome = page === 'home'
@@ -14,6 +14,7 @@ export default function Header({ page = 'home' }) {
     { href: '#servicios', label: ui.nav.services },
     { href: '#perfil', label: ui.nav.profile },
     { href: '#horario', label: ui.nav.hours },
+    { href: links.blog, label: ui.nav.blog },
   ]
 
   return (

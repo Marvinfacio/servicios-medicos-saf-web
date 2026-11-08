@@ -5,6 +5,7 @@ import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import Profile from './components/Profile.jsx'
 import Services from './components/Services.jsx'
+import LatestPosts from './components/LatestPosts.jsx'
 import Visit from './components/Visit.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -74,6 +75,7 @@ export default function App() {
         <Hero />
         <Profile />
         <Services />
+        <LatestPosts />
         <Visit />
       </main>
       <Footer />
