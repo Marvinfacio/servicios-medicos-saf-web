@@ -42,6 +42,7 @@ export const links = {
   reviews: 'https://share.google/BUNNZYr5uLaDcKtHE',
   home: import.meta.env.BASE_URL,
   business: `${import.meta.env.BASE_URL}empresas/`,
+  blog: `${import.meta.env.BASE_URL}blog/`,
 }
 
 export const addressLines = [
@@ -194,6 +195,7 @@ export const ui = {
     services: { es: 'Servicios', en: 'Services' },
     profile: { es: 'Perfil', en: 'About' },
     hours: { es: 'Horario', en: 'Hours' },
+    blog: { es: 'Blog', en: 'Blog' },
     business: { es: 'Para empresas', en: 'For businesses' },
     home: { es: 'Consultorio', en: 'Clinic' },
     language: { es: 'Idioma', en: 'Language' },
@@ -264,6 +266,64 @@ export const ui = {
       en: 'Hi, I would like information about medical services for my business.',
     },
     back: { es: '← Volver al consultorio', en: '← Back to the clinic' },
+  },
+  blog: {
+    pageTitle: { es: 'Blog de salud | Servicios Médicos SaF', en: 'Health blog | Servicios Médicos SaF' },
+    // El texto en español debe coincidir con blog/index.html
+    description: {
+      es: 'Artículos de salud claros y basados en evidencia, escritos por el Dr. Marvin Facio en Chihuahua: infecciones, salud metabólica y cuándo acudir a consulta.',
+      en: 'Clear, evidence-based health articles by Dr. Marvin Facio in Chihuahua: infections, metabolic health and when to see a doctor.',
+    },
+    eyebrow: { es: 'Blog · Divulgación médica', en: 'Blog · Health education' },
+    title: { es: 'Información de salud clara y basada en evidencia', en: 'Clear, evidence-based health information' },
+    intro: {
+      es: 'En internet hay mucha información de salud contradictoria. Aquí explicamos con palabras sencillas y fuentes confiables los temas que más nos preguntan en consulta.',
+      en: "There's a lot of conflicting health information online. Here we explain the topics patients ask us about most, in plain words and with reliable sources.",
+    },
+    processTitle: { es: 'Cómo hacemos cada artículo', en: 'How we write each article' },
+    process: [
+      {
+        es: 'Consultamos fuentes confiables: guías clínicas y organismos de salud.',
+        en: 'We use reliable sources: clinical guidelines and health agencies.',
+      },
+      {
+        es: 'Lo explicamos de forma sencilla, sin tecnicismos innecesarios.',
+        en: 'We explain it simply, without unnecessary jargon.',
+      },
+      {
+        es: 'Lo revisa un médico con cédula profesional antes de publicarlo.',
+        en: 'A licensed physician reviews it before it is published.',
+      },
+    ],
+    articles: { es: 'Artículos', en: 'Articles' },
+    latestTitle: { es: 'Artículos de salud', en: 'Health articles' },
+    latestSubtitle: {
+      es: 'Información clara para cuidarte mejor, escrita por nuestro equipo médico.',
+      en: 'Clear information to help you take care of yourself, written by our medical team.',
+    },
+    viewAll: { es: 'Ver todos los artículos →', en: 'See all articles →' },
+    read: { es: 'Leer artículo', en: 'Read article' },
+    minutes: { es: 'min de lectura', en: 'min read' },
+    by: { es: 'Por', en: 'By' },
+    back: { es: '← Todos los artículos', en: '← All articles' },
+    references: { es: 'Referencias', en: 'References' },
+    disclaimer: {
+      es: 'Este contenido es informativo y no sustituye una consulta médica. Si tienes síntomas o dudas, consulta a tu médico.',
+      en: 'This content is for information only and does not replace a medical visit. If you have symptoms or questions, see your doctor.',
+    },
+    ctaEyebrow: { es: '¿Tienes estos síntomas?', en: 'Do you have these symptoms?' },
+    ctaText: {
+      es: 'Agenda una valoración con nuestro equipo médico en Nexcare Consultorios, Interior E.',
+      en: 'Book an evaluation with our medical team at Nexcare Consultorios, Suite E.',
+    },
+    ctaAsk: { es: 'Agendar por WhatsApp', en: 'Book on WhatsApp' },
+    ctaAskText: { es: 'Hola, leí el artículo «{title}» y quiero agendar una consulta.', en: 'Hi, I read the article "{title}" and I would like to book a visit.' },
+    share: { es: 'Compartir por WhatsApp', en: 'Share on WhatsApp' },
+    authorBio: {
+      es: 'Médico general con enfoque metabólico, egresado de la Universidad Autónoma de Chihuahua. Atiende en Nexcare Consultorios y colabora con endocrinología en el Hospital Sierra Alta.',
+      en: 'General practitioner with a metabolic focus, graduated from the Universidad Autónoma de Chihuahua. Sees patients at Nexcare Consultorios and works with endocrinology at Hospital Sierra Alta.',
+    },
+    more: { es: 'Otros artículos', en: 'More articles' },
   },
   notFound: {
     pageTitle: {

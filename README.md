@@ -4,6 +4,7 @@ Sitio del consultorio hecho con **React + Vite**, **Tailwind CSS v4** y animacio
 
 **En línea:** https://serviciosmedicossaf.com/
 **Empresas:** https://serviciosmedicossaf.com/empresas/
+**Blog:** https://serviciosmedicossaf.com/blog/
 
 Para abrir un idioma desde un enlace o un anuncio: `?lang=es` o `?lang=en` al final de la dirección.
 
@@ -25,6 +26,11 @@ npm run images   # vuelve a generar las imágenes WebP (ver abajo)
 - **Foto del doctor:** reemplaza `assets-src/dr-marvin-facio.jpg` y ejecuta `npm run images`.
 - **Buscadores:** `public/robots.txt` permite rastrear todo el sitio y apunta a `public/sitemap.xml`. Si agregas una página, súmala al sitemap.
 - **Imagen para compartir** (WhatsApp, Facebook): `public/og-image.png`, de 1200×630. Se genera desde `scripts/og-image.html`; el comando está dentro de ese archivo.
+- **Blog** (https://serviciosmedicossaf.com/blog/): los artículos están en `src/blog/posts.js`, en español e inglés. Para publicar uno nuevo:
+  1. Agrega el artículo a `posts` (el formato de los bloques está al inicio del archivo). `relatedService` elige qué volante aparece al final.
+  2. Copia la carpeta `blog/resfriado-o-faringoamigdalitis/` con el nuevo nombre (slug) y cambia el título, la descripción, las URL y `data-post` de su `index.html`. La compilación la incluye sola.
+  3. Agrega las dos URL (`?lang=es` y `?lang=en`) a `public/sitemap.xml` y el enlace al `<noscript>` de `blog/index.html`.
+  4. No afirmes resultados ni promociones medicamentos; termina con "tratamiento médico cuando está indicado" e incluye referencias.
 - **Secciones:** `src/components/`.
 - **Páginas:** empresas en `src/pages/Empresas.jsx` y la página de error en `src/pages/NotFound.jsx`.
 - **Colores:** bloque `@theme` en `src/index.css`. La fuente Plus Jakarta Sans se sirve desde el propio sitio (`@fontsource-variable`).
