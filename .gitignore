@@ -4,3 +4,9 @@ dist/
 Thumbs.db
 .DS_Store
 desktop.ini
+
+# Claves y credenciales: nunca deben subirse al repositorio
+.env
+.env.*
+*.pem
+*.key

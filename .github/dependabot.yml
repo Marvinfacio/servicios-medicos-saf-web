@@ -1,0 +1,14 @@
+# Revisa cada semana si hay actualizaciones de seguridad en las dependencias y en las acciones de GitHub
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      dependencias:
+        patterns: ['*']
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
