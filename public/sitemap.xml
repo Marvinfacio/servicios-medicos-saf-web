@@ -28,4 +28,32 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://serviciosmedicossaf.com/empresas/?lang=en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://serviciosmedicossaf.com/empresas/" />
   </url>
+  <url>
+    <loc>https://serviciosmedicossaf.com/blog/?lang=es</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://serviciosmedicossaf.com/blog/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://serviciosmedicossaf.com/blog/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://serviciosmedicossaf.com/blog/" />
+  </url>
+  <url>
+    <loc>https://serviciosmedicossaf.com/blog/?lang=en</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://serviciosmedicossaf.com/blog/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://serviciosmedicossaf.com/blog/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://serviciosmedicossaf.com/blog/" />
+  </url>
+  <url>
+    <loc>https://serviciosmedicossaf.com/blog/resfriado-o-faringoamigdalitis/?lang=es</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://serviciosmedicossaf.com/blog/resfriado-o-faringoamigdalitis/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://serviciosmedicossaf.com/blog/resfriado-o-faringoamigdalitis/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://serviciosmedicossaf.com/blog/resfriado-o-faringoamigdalitis/" />
+  </url>
+  <url>
+    <loc>https://serviciosmedicossaf.com/blog/resfriado-o-faringoamigdalitis/?lang=en</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://serviciosmedicossaf.com/blog/resfriado-o-faringoamigdalitis/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://serviciosmedicossaf.com/blog/resfriado-o-faringoamigdalitis/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://serviciosmedicossaf.com/blog/resfriado-o-faringoamigdalitis/" />
+  </url>
 </urlset>
