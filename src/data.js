@@ -118,10 +118,18 @@ export const services = [
   },
 ]
 
+const uach = 'Universidad Autónoma de Chihuahua'
+
 export const team = {
-  marvin: { name: 'Dr. Marvin Facio', cedula: 'Céd. Prof. 12419385' },
-  isabel: { name: 'Dra. Isabel Orozco Gutiérrez', cedula: 'Céd. Prof. 15968780' },
-  paulina: { name: 'Dra. Paulina Escobedo', cedula: 'Céd. Prof. 15962293' },
+  marvin: { name: 'Dr. Marvin Facio', cedula: 'Céd. Prof. 12419385', university: uach },
+  isabel: { name: 'Dra. Isabel Orozco Gutiérrez', cedula: 'Céd. Prof. 15968780', university: uach },
+  paulina: { name: 'Dra. Paulina Escobedo', cedula: 'Céd. Prof. 15962293', university: uach },
+  manuel: {
+    name: 'Dr. Manuel Abraham Rascón Valenzuela',
+    cedula: 'Céd. Prof. 15909322',
+    role: { es: 'Médico general', en: 'General practitioner' },
+    university: 'Universidad de Durango Campus Chihuahua',
+  },
 }
 
 export const schedule = [
@@ -140,6 +148,8 @@ export const schedule = [
     ],
   },
   { days: { es: 'Domingo', en: 'Sunday' }, closed: true },
+  // Sin horario fijo: se agenda por WhatsApp o en recepción
+  { days: { es: 'Solo bajo cita', en: 'By appointment only' }, byAppointment: true, doctors: [team.manuel] },
 ]
 
 export const profile = {
@@ -229,6 +239,7 @@ export const ui = {
   visit: {
     hoursTitle: { es: 'Horario y médicos', en: 'Hours & doctors' },
     closed: { es: 'Cerrado', en: 'Closed' },
+    byAppointment: { es: 'Agenda por WhatsApp o en recepción', en: 'Book on WhatsApp or with reception' },
     locationTitle: { es: 'Ubicación', en: 'Location' },
     openMaps: { es: 'Abrir en Google Maps →', en: 'Open in Google Maps →' },
     reviews: { es: 'Ver reseñas en Google', en: 'See Google reviews' },

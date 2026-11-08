@@ -4,6 +4,19 @@ import { PhoneIcon, PinIcon, StarIcon } from './Icons.jsx'
 
 const focus = 'focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-cyan'
 
+function DoctorLine({ doctor: d }) {
+  const { t } = useLang()
+  return (
+    <span>
+      <span className={d.name === doctor.name ? 'font-bold' : 'font-medium'}>{d.name}</span>
+      <span className="block text-sm text-muted">
+        {d.role && `${t(d.role)} · `}
+        {d.cedula} · {d.university}
+      </span>
+    </span>
+  )
+}
+
 export default function Visit() {
   const { t } = useLang()
 
@@ -27,15 +40,22 @@ export default function Visit() {
                     {day.shifts.map((s) => (
                       <li key={s.time} className="flex flex-col gap-0.5 py-2.5 sm:flex-row sm:items-baseline sm:gap-4">
                         <span className="w-32 shrink-0 font-semibold text-teal-dark tabular-nums">{s.time} h</span>
-                        <span>
-                          <span className={s.doctor.name === doctor.name ? 'font-bold' : 'font-medium'}>{s.doctor.name}</span>
-                          <span className="block text-sm text-muted">
-                            {s.doctor.cedula} · {doctor.university}
-                          </span>
-                        </span>
+                        <DoctorLine doctor={s.doctor} />
                       </li>
                     ))}
                   </ul>
+                )}
+                {day.byAppointment && (
+                  <>
+                    <ul className="divide-y divide-line">
+                      {day.doctors.map((d) => (
+                        <li key={d.name} className="py-2.5">
+                          <DoctorLine doctor={d} />
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-1 text-sm font-semibold text-teal-dark">{t(ui.visit.byAppointment)}</p>
+                  </>
                 )}
               </div>
             ))}
